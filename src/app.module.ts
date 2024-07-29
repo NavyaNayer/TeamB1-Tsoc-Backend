@@ -17,7 +17,7 @@ import { AppService } from './app.service';
       type: 'postgres',
       url: process.env.DATABASE_URL,
       autoLoadEntities: true,
-      synchronize: true, // Set to false in production
+      synchronize: false, // Set to false in production
     }),
     AuthModule, // Ensure this is correctly imported
     PolicyModule,
