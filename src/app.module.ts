@@ -6,7 +6,7 @@ import { PolicyModule } from './policy/policy.module';
 import { ClaimsModule } from './claims/claims.module';
 import { UserModule } from './user/user.module';
 import { AppController } from './app.controller';
-
+import { PrismaService } from './prisma.service';
 
 import { AppService } from './app.service';
 
@@ -25,6 +25,6 @@ import { AppService } from './app.service';
     UserModule,
   ],
   controllers: [AppController],
-  providers: [AppService]
+  providers: [AppService, PrismaService]
 })
 export class AppModule {}
